@@ -1,0 +1,15 @@
+C:\projects\contoso-university\contoso-university-v1\bin\ContosoUniversity.dll.config
+C:\projects\contoso-university\contoso-university-v1\bin\ContosoUniversity.dll
+C:\projects\contoso-university\contoso-university-v1\bin\ContosoUniversity.pdb
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.DepartmentSP.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.RowVersion.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.Migrations.Inheritance.resources
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversityV1.csproj.GenerateResource.Cache
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.dll
+C:\projects\contoso-university\contoso-university-v1\obj\Debug\ContosoUniversity.pdb
+C:\projects\contoso-university\contoso-university-v1\bin\Microsoft.ServiceBus.dll
+C:\projects\contoso-university\contoso-university-v1\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\projects\contoso-university\contoso-university-v1\bin\Microsoft.ServiceBus.xml

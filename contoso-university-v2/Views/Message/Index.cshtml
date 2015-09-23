@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ContosoUniversity.Models.ContosoMessage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Messages</h2>
+<!--
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+-->
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageTimestamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageString)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MessageID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MessageTimestamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MessageString)
+            </td>
+        </tr>
+    }
+
+</table>
