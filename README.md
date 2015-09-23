@@ -19,6 +19,8 @@ the command line will then prompt you for the queue connection string with the p
 
     queueConnectionString: Endpoint=sb://xxxxxxxxxx.servicebus.windows.net/;SharedAccessKeyName=read-write;SharedAccessKey=xxxxxxSomeBase64EncodedStringxxxxx
 
+When creating the above services, please be sure to use only the variable names `connectionString` and `queueConnectionString` since the apps look for these strings when parsing the `VCAP_SERVICES` environment variable.
+
 The code is provided pre-built so you can push without compiling the code.
 
 There are batch files in each project folder (`demo1.bat` in contoso-university-V1 and `demo2.bat` in contoso-university-V2) that will issue the right push command and bind the right services.
