@@ -25,3 +25,16 @@ The code is provided pre-built so you can push without compiling the code.
 
 There are batch files in each project folder (`demo1.bat` in contoso-university-V1 and `demo2.bat` in contoso-university-V2) that will issue the right push command and bind the right services.
 
+Please see the supporting java app [available here](https://github.com/saurabhguptasg/servicebus "servicebus") that pumps messages into the Azure Service Bus: please note that the `contoso-demo-queue` service must be provided to this app before it can function correctly.
+
+## Usage
+
+the `https://app.domain.com/Messages` link in the app will give a list of messages from the queue
+
+There are two actions on the top of the Messages page *only in the V1 app version* : Kill Instance and Expensive Task
+
+The Kill Instance link will kill an instance; this can be used to show auto-recovery
+
+The Expensive Task link will make the system undergo an expensive process, and the following endpoint can be hit with something like JMeter to stress the system and trigger and autoscaling operation: `https://app.domain.com/Message/PerformExpensiveTask`
+
+Also, the bottom of each page contains an IP address and a random number uniquely assigned to each instance, so you can show load balancing with multiple instances, as the random number will change with each refresh to one of the n assigned numbers corresponding to each of the n instances of the app.
