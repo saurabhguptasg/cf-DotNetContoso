@@ -29,7 +29,7 @@ Please see the supporting java app [available here](https://github.com/saurabhgu
 
 ## Usage
 
-the `https://app.domain.com/Messages` link in the app will give a list of messages from the queue
+The `https://app.domain.com/Messages` link in the app will give a list of messages from the queue
 
 There are two actions on the top of the Messages page *only in the V1 app version* : Kill Instance and Expensive Task
 
@@ -38,3 +38,23 @@ The Kill Instance link will kill an instance; this can be used to show auto-reco
 The Expensive Task link will make the system undergo an expensive process, and the following endpoint can be hit with something like JMeter to stress the system and trigger and autoscaling operation: `https://app.domain.com/Message/PerformExpensiveTask`
 
 Also, the bottom of each page contains an IP address and a random number uniquely assigned to each instance, so you can show load balancing with multiple instances, as the random number will change with each refresh to one of the n assigned numbers corresponding to each of the n instances of the app.
+
+## Cloud Foundry
+
+Use the following commands to deploy to Pivotal Cloud Foundry after you have created the User Provided Servies in the earlier steps.
+
+On Linux:
+
+    cd contoso-university-v1
+    bash demo1.bat
+
+    cd ../contoso-university-v2
+    bash demo2.bat
+
+On Windows:
+
+    cd contoso-university-v1
+    demo1.bat
+
+    cd cd contoso-university-v2
+    demo2.bat
