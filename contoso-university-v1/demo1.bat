@@ -4,4 +4,4 @@ cf set-health-check contoso-demo-v1 none
 cf bind-service contoso-demo-v1 contoso-demo-sql
 cf bind-service contoso-demo-v1 contoso-demo-queue
 cf start contoso-demo-v1
-cf map-route contoso-demo-v1 YOUR_DOMAIN -n contoso
+cf map-route contoso-demo-v1 pcf.io -n contoso

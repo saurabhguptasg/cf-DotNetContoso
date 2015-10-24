@@ -58,5 +58,5 @@ Step 2b: On Windows:
     cd contoso-university-v1
     demo1.bat
 
-    cd cd contoso-university-v2
+    cd ../contoso-university-v2
     demo2.bat
