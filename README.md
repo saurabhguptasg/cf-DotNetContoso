@@ -7,17 +7,17 @@ You need to create two "user provided services" in PCF. The first is a connectio
 
     cf cups contoso-demo-sql -p 'connectionString'
 
-the system will then prompt you for the connection string to the SQL database by showing `connectionString:`, and you can enter your SQL Server connection string (the SQL Server database can be hosted anywhere, e.g. on Azure):
+the system will then prompt you for the connection string to the SQL database by showing `connectionString:`, and you can enter your SQL Server connection string (the SQL Server database can be hosted anywhere, e.g. on Azure). Replace the following parameters with the appropriate values: YOUR_IP, YOUR_USERID, YOUR_PASSWORD, YOUR_DATABASE
 
-    connectionString: Data Source=xxxxxxxxx.database.windows.net;Integrated Security=False;User ID=xxxxxxx;Password=xxxxxx;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Initial Catalog=ContosoUniversity2
+    Data Source=YOUR_IP;Integrated Security=False;User ID=YOUR_USERID;Password=YOUR_PASSWORD;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Initial Catalog=YOUR_DATABASE
 
 The second service is to an Azure Service Bus queue:
 
     cf cups contoso-demo-queue -p 'queueConnectionString'
 
-the command line will then prompt you for the queue connection string with the prompt `queueConnectionString:`, and you can enter the information as follows:
+the command line will then prompt you for the queue connection string with the prompt `queueConnectionString:`, and you can enter the information as follows. Replace the following parameters with the appropriate values: YOUR_QUEUE_HOST, YOUR_QUEUE_NAME, YOUR_QUEUE_KEY
 
-    queueConnectionString: Endpoint=sb://xxxxxxxxxx.servicebus.windows.net/;SharedAccessKeyName=read-write;SharedAccessKey=xxxxxxSomeBase64EncodedStringxxxxx
+    Endpoint=sb://YOUR_QUEUE_HOST;SharedAccessKeyName=YOUR_QUEUE_NAME;SharedAccessKey=YOUR_QUEUE_KEY
 
 When creating the above services, please be sure to use only the variable names `connectionString` and `queueConnectionString` since the apps look for these strings when parsing the `VCAP_SERVICES` environment variable.
 
