@@ -43,7 +43,9 @@ Also, the bottom of each page contains an IP address and a random number uniquel
 
 Use the following commands to deploy to Pivotal Cloud Foundry after you have created the User Provided Servies in the earlier steps.
 
-On Linux:
+Step 1: Edit the file contoso-university-v1/demo.bat and replace YOUR_DOMAIN with the domain in use by application in your instance of Cloud Foundry.
+
+Step 2a: On Linux:
 
     cd contoso-university-v1
     bash demo1.bat
@@ -51,7 +53,7 @@ On Linux:
     cd ../contoso-university-v2
     bash demo2.bat
 
-On Windows:
+Step 2b: On Windows:
 
     cd contoso-university-v1
     demo1.bat
